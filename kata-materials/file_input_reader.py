@@ -5,7 +5,7 @@ class FileInputReader:
     A class to read commands from a file and apply them to a Submarine object.
     """
 
-    def read_file(self, sub: Submarine, filename, verbose=False):
+    def read_file(self, sub: Submarine, filename):
         """
         Reads a file containing commands and applies them to the given Submarine object.
 
@@ -24,4 +24,4 @@ class FileInputReader:
                 [command, units_str] = line.rstrip().split(" ")
                 units = int(units_str)
 
-                sub.move(command, units, verbose)
+                sub.move(command, units)
