@@ -6,6 +6,7 @@ class Submarine:
     Provides methods to move the submarine based on commands.
 
     Attributes:
+        verbose (bool): If True, move() will print the command and updated state.
         depth (int): The current depth of the submarine.
         horizontal_position (int): The current horizontal position of the submarine.
     """
@@ -15,9 +16,9 @@ class Submarine:
         Initializes the Submarine instance with optional starting depth and horizontal position.
 
         Args:
+            verbose (bool): If True, move() will print the command and updated state. Defaults to False.
             depth (int): Initial depth of the submarine. Defaults to 0.
             horizontal_position (int): Initial horizontal position of the submarine. Defaults to 0.
-            verbose (bool): If True, move() will print the command and updated state. Defaults to False.
         """
         self.verbose = verbose
         self.depth = depth

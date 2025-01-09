@@ -5,14 +5,13 @@ class FileInputReader:
     A class to read commands from a file and apply them to a Submarine object.
     """
 
-    def read_file(self, sub: Submarine, filename):
+    def read_file(self, sub: Submarine, filename: str):
         """
         Reads a file containing commands and applies them to the given Submarine object.
 
         Args:
             sub (Submarine): The Submarine object to apply the commands to.
             filename (str): The name of the file containing the commands.
-            verbose (bool, optional): If True, prints additional information during execution. Defaults to False.
 
         The file should contain commands in the format:
         <command> <units>
